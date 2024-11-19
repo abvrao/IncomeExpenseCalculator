@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Expense Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Income Expense Calculator</h1>
+    </header>
+
+    <!-- Summary -->
+    <section class="summary">
+      <div>
+        <h2>Total Income:</h2>
+        <p id="totalIncome">Rs. 0</p>
+      </div>
+      <div>
+        <h2>Total Expenses:</h2>
+        <p id="totalExpense">Rs. 0</p>
+      </div>
+      <div>
+        <h2>Net Balance:</h2>
+        <p id="netBalance">Rs. 0</p>
+      </div>
+    </section>
+
+    <!-- Input Form -->
+    <section class="input-form">
+      <input type="text" id="description" placeholder="Description" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="type" value="income" checked> Income
+        </label>
+        <label>
+          <input type="radio" name="type" value="expense"> Expense
+        </label>
+      </div>
+      <button id="addEntryButton">Add Entry</button>
+      <button id="resetButton">Reset</button>
+    </section>
+
+    <!-- Filter Options -->
+    <section class="filters">
+      <label>
+        <input type="radio" name="filter" value="all" checked> All
+      </label>
+      <label>
+        <input type="radio" name="filter" value="income"> Income
+      </label>
+      <label>
+        <input type="radio" name="filter" value="expense"> Expense
+      </label>
+    </section>
+
+    <!-- Entry Table -->
+    <section>
+      <table id="entryTable">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Amount (Rs.)</th>
+            <th>Type</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

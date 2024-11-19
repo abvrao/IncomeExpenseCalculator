@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: orange;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .summary div {
+    text-align: center;
+  }
+  
+  .input-form {
+    margin: 20px;
+  }
+  
+  .input-form input {
+    display: block;
+    width: 60%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .entry-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .entry-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+  }
+  
+  .entry-item {
+    text-align: center;
+  }
+  
